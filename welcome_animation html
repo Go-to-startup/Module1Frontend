@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling/butterfly_animation.css">
+</head>
+<body>
+    <header>
+        <div class="remark-welcome">
+            <h1>  Welcome </h1>
+        </div>
+    </header>
+     <section id="image-container">          <!-- /*This section contain images of butterflies*/ --> 
+    <img id="right" src="images/butterfly04.gif" alt="">
+    <img id="left" src="images/butterfly07.gif" alt="">
+</section>
+<section id="remark">
+    <div class="remark-quotes">
+        <p><b >Remember : </b>&nbsp;Buisness is like a butterfly </p>
+    </div>
+        <div id="Go_inside">
+            <a href="" target="_self"><button id="go">Go inside </button></a>
+         </div>
+    
+</section>
+
+    
+</body>
+</html>
