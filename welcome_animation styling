@@ -1,0 +1,121 @@
+body{
+    background-color: black;
+    overflow: hidden;
+    width: 100vh;
+    
+}
+#right{                 /*butterfly right fly to left */
+    right: -40vh;
+    animation: fly-right 3s infinite;
+}
+
+#left{                     /*butterfly left fly to right */
+ 
+    left: -40vh;
+    top: 50vh;
+    animation: fly-left 3s infinite;
+}
+img{                      /*image tag contain butterflies images in it */
+    width: 40vh;
+    position: absolute;
+}
+.remark-welcome{
+    color: white;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+.remark-welcome h1{
+    font-size: 6vh;  
+    font-weight: 600;
+    font-size: 8vmin;
+    font-family: 'Sedgwick Ave Display', cursive; /*Header content styling*/
+}
+.remark-quotes{       /*section remark styling*/
+    
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vmin;
+    position: relative;
+    left: 30vw;
+    color: white;
+    animation: font_animate 3s 1;
+    font-family: Delicious Handrawn;
+}
+
+  p b{
+    font-size: 3vh;
+    color: rgb(12, 172, 225);
+  }
+  #Go_inside{
+        width: 10vw;
+        height: 5vh;
+        position: absolute;
+        right: 5vh;
+  }
+  #Go_inside button{
+       border: 3px solid transparent;
+       width: 10vw;
+       height: 5vh;
+       background-color: green;
+       color: white;
+       font-weight: 600;
+       border-radius: 6px;
+       cursor: pointer;
+  }
+  #remark{
+    bottom: 4vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    }
+  
+@keyframes fly-left{   /*Animation for butterfly that fly from left to right*/
+    0%{
+        left: -10%;
+     
+    }
+
+    25%{
+        transform: rotate(360deg); 
+        
+    }
+    50%{
+       transform: translateY(-100%);
+         
+    }
+    100%{
+         left: 100%;
+    }
+}
+@keyframes fly-right{          /*Animation for butterfly that flyies from right to left*/         
+    0%{
+        right: -10%;
+     
+    }
+
+    25%{
+        transform: rotate(360deg); 
+        
+    }
+    50%{
+        transform: translateY(100%);
+         
+    }
+    100%{
+         right: 100%;
+    }
+}
+@keyframes font_animate{   /* remark quotes font animation */
+    0%{
+        transform: rotate(45deg) scale(0);
+    }
+}
