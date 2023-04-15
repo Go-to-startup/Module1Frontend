@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling/landing_page.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="circle" id="circle_one">
+        </div>
+        <div class="circle" id=circle_two>
+            <h2>Go startup</h2>
+        </div>
+    </div>
+    <div class="frame">
+        <div class="frames" id="frame_first">
+            <ul id="ullist1">
+                &nbsp;<h2>Current Opportunities</h2>
+                <li><a href="">Tata launch a fund campaign for startup</a></li>
+                <li><a href="">PM Promotes startup through giving funds to students</Pre></a></li>
+                <li><a href="">AKTU is going to organize a fund campaign for students</a></li>
+                <li><a href="">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</a></li>
+                <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                <li><a href="">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</a></li>
+            </ul>
+            <div id="upframe2">
+                <iframe class="iframes" src="" frameborder="0"></iframe>
+                <iframe class="iframes" src="" frameborder="0"></iframe>
+                <iframe class="iframes" src="" frameborder="0"></iframe>
+                <iframe class="iframes" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+        <div class="frames" id="frame_second">
+            <ul id="ullist2">
+                &nbsp;<h2>Upcoming Opportunities</h2>
+                <li><a href="">Tata launch a fund campaign for startup</a></li>
+                <li><a href="">PM Promotes startup through giving funds to students</Pre></a></li>
+                <li><a href="">AKTU is going to organize a fund campaign for students</a></li>
+                <li><a href="">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</a></li>
+                <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                <li><a href="">Tata launch a fund campaign for startup</a></li>
+                <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+            </ul>
+            <div id="upframe">
+                <iframe class="iframes" src="" frameborder="0"></iframe>
+                <iframe class="iframes" src="" frameborder="0"></iframe>
+                <iframe class="iframes" src="" frameborder="0"></iframe>
+                <iframe class="iframes" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+
+    </div>
+    <div class="form_container">
+        <div class="container">
+            <h1 id="title">Sign Up</h1>
+            <form action="nophp">
+                <div class="input-field" id="namefield">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="" id="Name" placeholder="ENTER NAME">
+
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" name="" id="email" placeholder="ENTER E_MAIL">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="" id="password" placeholder="ENTER PASSWORD">
+                </div>
+            </form>
+            <p id="para">Already have an account? <a href="">sign in</a></p>
+            <div class="cont-button">
+                <button id="signup">sign up</button>
+                <button id="signin">sign in</button>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="">About us</a></li>
+                <li><a href="">Our Acheivments</a></li>
+                <li><a href="">Help</a></li>
+                <li> <a href="">Terms & Condition</a></li>
+                <li> <a href="">Contact us</a> </li>
+                <li><a href="">Know More</a></li>
+            </ul>
+        </footer>
+
+</body>
+<script>
+
+    let signin = document.getElementById('signin');
+    let signup = document.getElementById('signup');
+    let namefield = document.getElementById('namefield');
+    let title = document.getElementById('title');
+    let para = document.getElementById("para");
+    let ullist1 = document.getElementById('ullist1');
+    let ullist2 = document.getElementById('ullist2');
+    let upframe = document.getElementById("upframe");
+    let upframe2 = document.getElementById('upframe2')
+    signin.onclick = function () {
+        namefield.style.maxHeight = '0';
+        signin.style.background = 'rgb(188, 47, 188)';
+        signin.style.color = 'white';
+        signup.style.background = 'none';
+        signup.style.color = 'black';
+        title.innerHTML = 'Sign in';
+        para.style.display = 'none';
+        signin.innerHTML = '<a href="butterfly_animation2.html" style="color:white">sign in</a>'
+    }
+    signup.onclick = function () {
+        signup.style.background = 'rgb(188, 47, 188)';
+        signup.style.color = 'white';
+        namefield.style.maxHeight = '65px';
+        signin.style.background = 'none';
+        signin.style.color = 'black';
+        title.innerHTML = 'Sign up';
+        para.style.display = 'block';
+        signin.innerHTML = 'sign in'
+    }
+    function ul_display() {
+        ullist1.style.display = 'block';
+        ullist2.style.display = 'block';
+        upframe.style.display = 'none';
+        upframe2.style.display = 'none';
+
+
+    }
+    setTimeout(ul_display, 2200);
+
+</script>
+
+</html>
